@@ -20,6 +20,8 @@ class CollegeApi
   end
 
   def search
+    return [] if @school_name.try(:size).to_i < 3
+
     params = {
       api_key: '048lbVyrQzMHJoNcryH1bSqtLULgpamI0rRmrxFa',
       :'school.name' => @school_name,
