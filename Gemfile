@@ -67,4 +67,5 @@ group :test do
   gem "selenium-webdriver"
   gem 'rspec-its', '~> 1.3'
   gem 'rspec-rails', '~> 6.1', '>= 6.1.3'
+  gem 'webmock', '~> 3.23', '>= 3.23.1'
 end
